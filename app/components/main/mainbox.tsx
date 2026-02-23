@@ -1,13 +1,10 @@
-import MainBox from "./components/main/mainbox"
 import Image from 'next/image';
-import profileImg from '../app/img/profile-picture.png'
+import profileImg from '../../img/profile-picture.png'
 
-export default function Home() {
-  return (
-    <div className="main flex h-screen items-center, justify-center">
-      <div className="flex w-full">
-      
-            <div className="bg-orange-300 m-20 border-2 p-2 w-[50%] h-fit flex items-center justify-start shadow-[3px_3px_0px]">
+
+export default function MainBox() {
+    return (
+        <div className="bg-orange-300 m-20 border-2 p-2 w-fit h-fit flex items-center justify-center shadow-[3px_3px_0px]">
 
             <div className='m-3 border-2 w-30 h-40 overflow-hidden relative '>
                 <Image 
@@ -28,8 +25,6 @@ export default function Home() {
             </div>
         
         </div>
-      </div>
-      
-    </div>
-  )
+
+    )
 }
