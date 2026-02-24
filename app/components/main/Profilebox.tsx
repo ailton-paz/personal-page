@@ -2,7 +2,7 @@ import Image from 'next/image';
 import profileImg from '../../img/profile-picture.png'
 
 
-export default function MainBox() {
+export default function Profilebox() {
     return (
         <div className="bg-orange-300 m-20 border-2 p-2 w-fit h-fit flex items-center justify-center shadow-[3px_3px_0px]">
 
