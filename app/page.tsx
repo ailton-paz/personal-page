@@ -8,8 +8,8 @@ import WorkList from '@/app/components/main/WorkList'
 export default function Home() {
   return (
   
-    <div>
-      <div>
+    <div className="p-5 w-full h-full flex flex-col gap-5">
+      <div className='flex flex-col md:flex-row gap-y-5 md:gap-x-5 '>
         <ProfileBox />
         <WorkList />
       </div>
