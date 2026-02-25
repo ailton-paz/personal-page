@@ -25,7 +25,7 @@ export default function SideNav() {
           href="/posts"
           className='flex items-center justify-center w-15 aspect-square bg-orange-100 border-3 border-white'>
           <PiBookOpenText size={25}/>
-          <p className='hidden md:block'>Posts</p>
+          <p className='hidden md:block'>Postss</p>
           </a>
         </div>
 
