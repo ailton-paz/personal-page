@@ -3,9 +3,9 @@ import { RiMenuSearchFill } from "react-icons/ri"
 
 export default function WorkList() {
     return (
-        <div className="border-2 bg-white shadow-[4px_4px_0px]">
+        <div className="flex flex-col border-2 bg-white shadow-[4px_4px_0px]">
 
-            <div className='flex p-2 gap-x-2 border-b-2'>
+            <div className='flex p-2 grow gap-x-2 border-b-2'>
                 <div className="flex items-center justify-center w-8 h-8 bg-white border-2 border-black">
                     <RiMenuSearchFill size={20} color='#000' />
                 </div>
@@ -16,7 +16,7 @@ export default function WorkList() {
                 </div>
             </div>
 
-            <div className='flex p-2 gap-x-2 border-b-2'>
+            <div className='flex p-2 grow gap-x-2 border-b-2'>
                 <div className="flex items-center justify-center w-8 h-8 bg-white border-2 border-black">
                     <RiMenuSearchFill size={20} color='#000' />
                 </div>
@@ -27,7 +27,7 @@ export default function WorkList() {
                 </div>
             </div>
 
-            <div className='flex p-2 gap-x-2 border-b-2'>
+            <div className='flex p-2 grow gap-x-2 border-b-2'>
                 <div className="flex items-center justify-center w-8 h-8 bg-white border-2 border-black">
                     <RiMenuSearchFill size={20} color='#000' />
                 </div>
