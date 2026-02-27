@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function ProfileBox() {
     return (
-        <div className="flex bg-orange-300 border-2 h-auto md:w-[600px]
+        <div className="flex bg-orange-300 border-2 h-auto w-screen md:h-full md:w-full
          p-4 gap-x-4 justify-around shadow-[4px_4px_0px]"> 
         {/*A div principal do componente, com estilos para layout, aparência e tamanho*/}
 

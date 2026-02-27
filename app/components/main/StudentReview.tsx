@@ -3,7 +3,7 @@ import { RiEmphasisCn } from "react-icons/ri"
 
 export default function StudentReview() {
     return (
-        <div className="flex gap-x-2">
+        <div className="flex gap-x-2 justify-between">
 
             <div className="bg-white flex flex-col border-2 w-50 p-4 gap-1 shadow-[4px_4px_0px]">
                 <div className="flex justify-between">
