@@ -5,30 +5,33 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function ProfileBox() {
     return (
-        <div className="flex bg-orange-300 border-2 w-full
-        h-auto p-4 justify-around shadow-[4px_4px_0px]"> 
+        <div className="flex bg-orange-300 border-2 h-auto md:w-[600px]
+         p-4 gap-x-4 justify-around shadow-[4px_4px_0px]"> 
         {/*A div principal do componente, com estilos para layout, aparência e tamanho*/}
 
             {/*Div da imagem*/}
-            <div className='border-3 w-40 aspect-[3/4] relative'>
+            <div className='border-3 w-[450px] md:w-40 md:aspect-[3/4] relative'>
                 <Image 
                 src={profileImg}
                 fill
-                className='object-cover object-bottom '
+                className='object-cover object-center '
                 alt="Foto de perfil" />
             </div>
 
             {/*Div das informações complementares*/}
-            <div className='w-[65%] flex flex-col gap-y-3'>
+            <div className='flex flex-col gap-y-3'>
                 
                 {/*Primeira div, nome e ícones*/}
                 <div>
-                <div className='flex justify-between h-10'>
-                    <h1 className='font-bold text-[clamp(1.7rem,2.5vw,1.25rem)]'>Ailton Paz</h1>
+                <div className='flex justify-between items-center h-10'>
                     
+                    <div>
+                    <h1 className='font-bold text-[22px] leading-none'>Ailton Paz</h1>
+                    <p className='text-[12px] leading-none '>ailton6paz@gmail.com</p>
+                    </div>
                    
                     {/*Div dos ícones de github,linkedin*/}
-                    <div className='flex gap-2 h-full'> 
+                    <div className='flex gap-2 h-[30px]'> 
                         <a 
                         href="https://github.com/ailton-paz"
                         target='blank'
@@ -44,30 +47,31 @@ export default function ProfileBox() {
                         </a>
                     </div>
                 </div>
-                <p>ailton6paz@gmail.com</p>
+    
                 </div>
 
+
                 {/*Segunda div, quadradinhos*/}
-                <div className='flex flex-wrap justify-around w-full gap-2 text-sm'>
+                    <div className='flex justify-between w-full h-[60px] gap-1 text-sm'>
 
-                    <div className='border-2 p-2 flex flex-col justify-center gap-y-1 bg-[#ffd967]'>
-                        <p className='font-extrabold text-lg leading-none'>10+</p>
-                        <p className='leading-none'>experience</p>
+                    <div className='border-2 p-1 flex flex-col justify-center bg-[#ffd967]'>
+                        <p className='font-extrabold text-[12px] leading-none'>10+</p>
+                        <p className='leading-none text-[8px]'>experience</p>
                     </div>
 
-                    <div className='border-2 p-2 flex flex-col justify-center gap-y-1 bg-[#FFD867]'>
-                        <p className='font-extrabold text-lg leading-none'>#1</p>
-                        <p className='leading-none'>on platform</p>
+                    <div className='border-2 p-1 flex flex-col justify-center bg-[#FFD867]'>
+                        <p className='font-extrabold text-[12px] leading-none'>#1</p>
+                        <p className='leading-none text-[10px]'>on platform</p>
                     </div>
 
-                    <div className='border-2 p-2 flex flex-col justify-center gap-y-1 bg-[#FFD867]'>
-                        <p className='font-extrabold text-lg leading-none'>5 ya</p>
-                        <p className='leading-none'>of teaching</p>
+                    <div className='border-2 p-1 flex flex-col justify-center bg-[#FFD867]'>
+                        <p className='font-extrabold text-[12px] leading-none'>5 ya</p>
+                        <p className='leading-none text-[10px]'>of teaching</p>
                     </div>
 
-                    <div className='border-2 p-2 flex flex-col justify-center gap-y-1 bg-[#FFD867]'>
-                        <p className='font-extrabold text-lg leading-none'>12</p>
-                        <p className='leading-none'>courses</p>
+                    <div className='border-2 p-1 flex flex-col justify-center  bg-[#FFD867]'>
+                        <p className='font-extrabold text-[12px] leading-none'>12</p>
+                        <p className='leading-none text-[10px]'>courses</p>
                     </div>
 
                 </div>
